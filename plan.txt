@@ -1,0 +1,12 @@
+Id database schema:
+    number
+    unique id
+    link to the image
+    checked by the main script or not
+
+1. Run a script to create all of the possible ids and add them to database
+2. Every id has to be marked as unchecked
+3. Run a script to check every entry in the database by sending a get request to the url/{id} 
+    and adding the image source to the database and mark the id as checked
+4.create an express backend whick will query the database and select the id's whith the url that is not "//not-image"
+5.have a react front-end which will send a request to the database to query a random "good" id 
